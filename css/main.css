@@ -202,7 +202,7 @@ Media Queries
 
 @media (min-width: 1200px) {
   .card__format p {
-    margin-bottom: 7rem;
-    line-height: 2.5;
+    margin-bottom: 4rem;
+    line-height: 2;
   }
 }
