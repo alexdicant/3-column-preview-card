@@ -76,7 +76,7 @@ main {
 }
 
 .button:hover {
-  box-shadow: 2px 4px 11px 0px rgba(105, 105, 105, 0.514);
+  box-shadow: 2px 2px 2px 0px rgba(141, 141, 141, 0.4);
 }
 
 .orange {
@@ -115,4 +115,83 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media (min-width: 970px) {
+  .card {
+    height: 95%;
+    width: 60%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__format {
+    height: 70%;
+    padding: 3rem;
+  }
+  .card__format img {
+    height: 42px;
+    margin-bottom: 2rem;
+  }
+  .card__format p {
+    font-size: 1rem;
+    opacity: 0.5;
+    line-height: 2;
+    margin-bottom: 4rem;
+  }
+  .card__format h2 {
+    margin-bottom: 1.5rem;
+  }
+  .button {
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+  }
+  .card__sendans {
+    border-radius: 10px 0 0 10px;
+    background-color: var(--bright-orange);
+  }
+  .card__luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card__format p {
+    font-size: 1rem;
+    opacity: 0.5;
+    line-height: 1.5;
+    margin-bottom: 6rem;
+  }
+  .card__format {
+    height: 70%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .card__format p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    line-height: 1.5;
+    margin-bottom: 6rem;
+  }
+  .card__format {
+    height: 70%;
+    padding: 1.8rem;
+  }
+  .button {
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
 }
