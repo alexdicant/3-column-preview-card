@@ -111,10 +111,12 @@ main {
   height: 5%;
   font-size: 11px;
   text-align: center;
+  color: lightgray;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  color: lightgray;
 }
 
 /*
@@ -184,6 +186,10 @@ Media Queries
 }
 
 @media (min-width: 1000px) {
+  .card__format img {
+    height: 42px;
+    margin-bottom: 2rem;
+  }
   .card__format h2 {
     margin-bottom: 2rem;
   }
@@ -197,5 +203,6 @@ Media Queries
 @media (min-width: 1200px) {
   .card__format p {
     margin-bottom: 7rem;
+    line-height: 2.5;
   }
 }
